@@ -22,46 +22,66 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
+
+<header>
+  <div id="video_filter">
+    <iframe id="video-bg" frameborder="0" allowfullscreen="1" width="560" height="315" src="https://www.youtube.com/embed/twm_t7U5zkI?autohide=1&autoplay=1&controls=0&enablejsapi=1&iv_load_policy=3&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=0&wmode=opaque&widgetid=1" style="width: 1349px; height: 758.813px; left: 0px; top: -246.906px;"></iframe>
+  </div>
+  <!--<div class="container">
+    <div class="intro-video">
+        <video id="video" preload autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="http://s3-eu-west-1.amazonaws.com/docplanner.com/video/timelapse.mp4" type="video/mp4">
+            <source type="video/webm" src="//s3-eu-west-1.amazonaws.com/docplanner.com/video/timelapse.webm"></source>
+        </video>
+    </div>
+  </div>-->
+</header>
 <body>
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Logistica Aduanera</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#">INICIO</a></li>
-        <li id="custom_hover_nav"><a class="dropdown-toggle" data-toggle="dropdown" href="#">INVENTARIO EN SUBASTA <span class="caret"></span></a>
-          <ul class="dropdown-menu" id="collapse">
-            <li><a href="#">Harley Davidson</a></li>
-            <li><a href="#">Motos 2</a></li>
-            <li><a href="#">Motos 3</a></li>
-          </ul></li>
-          <li><a href="#">TERMINOS Y CONDICIONES</a></li>
-          <li><a href="#">CONTACTANOS</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrate</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logistica Aduanera</a>
       </div>
-    </div>
-  </nav>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">INICIO</a></li>
+          <li id="custom_hover_nav"><a class="dropdown-toggle" data-toggle="dropdown" href="#">INVENTARIO SUBASTADO<span class="caret"></span></a>
+            <ul class="dropdown-menu" id="collapse">
+              <li><a href="#">Harley Davidson</a></li>
+              <li><a href="#">Motos 2</a></li>
+              <li><a href="#">Motos 3</a></li>
+            </ul></li>
+            <li><a href="#">TERMINOS Y CONDICIONES</a></li>
+            <li><a href="#">CONTACTANOS</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrate</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <script>
+    <script>
+
     $(document).ready(function(){
-      $("#custom_hover_nav").hover(function(){ //show inventario on hover
-        $("#collapse").collapse('toggle');
-    });
-    });
-  </script>
+      /*var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
-  <!--<h1>Hello, world!</h1>-->
+      if (!isMobile.matches) {
+        $("#custom_hover_nav").hover(function(){ //show inventario on hover
+          $("#collapse").collapse('toggle');
+        });
+      }
+      */
+    });
+    </script>
 
-</body>
+    <!--<h1>Hello, world!</h1>-->
+
+  </body>
